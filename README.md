@@ -7,6 +7,11 @@
 const dooray = require("dooray");
 
 let messageManager  = new dooray();
+    // URL 설정 후 메시지 발송
+    messageManager.send("{input your dooray service url}",
+                        "{input your message}");
+    
+    // 봇이름 봇 이미지옵션으로 추가 
     messageManager.send("{input your dooray service url}", 
                         "{input your message}", 
                         "{bot Name<Optional>}", 
