@@ -12,3 +12,5 @@ let messageManager  = new dooray();
                         "{bot Name<Optional>}", 
                         "{bot image<Optional>}").then();
 ```
+
+#### Dooray! incoming-hoot guide(official) : <https://docs.toast.com/ko/Dooray/Messenger/ko/incoming-hook-guide/>
