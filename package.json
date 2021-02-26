@@ -13,10 +13,9 @@
     "bot"
   ],
   "author": "up-circle",
-  "email" : "greed.thread@gmail.com",
+  "email": "greed.thread@gmail.com",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.21.1",
-    "qs": "^6.9.6"
+    "axios": "^0.21.1"
   }
 }
