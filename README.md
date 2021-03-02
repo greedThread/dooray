@@ -15,7 +15,31 @@ let messageManager  = new dooray();
     messageManager.send("{input your dooray service url}", 
                         "{input your message}", 
                         "{bot Name<Optional>}", 
-                        "{bot image<Optional>}").then();
+                        "{bot image<Optional>}",
+                        "{attachments<Optional>}");
+
+    // URL 설정 후 메시지 발송, callback  
+    messageManager.sendCallback("{input your dooray service url}", "{input your message}", function (err) {
+        if(err) {
+            console.log("send fail");
+        }
+        else {
+            console.log("send success");
+        }
+    });
+
+    // 봇이름 봇 이미지옵션으로 추가, callback 
+    messageManager.sendCallback("{input your dooray service url}", "{input your message}",
+                                // Array <Optional>
+                                ["{bot Name<Optional>}", "{bot image<Optional>}", "{attachments<Optional>}"],  function (err) {
+       if(err) {
+           console.log("send fail");
+       }     
+       else {
+           console.log("send success");
+       }
+    });
+    
 ```
 
 #### Dooray! incoming-hoot guide(official) : <https://docs.toast.com/ko/Dooray/Messenger/ko/incoming-hook-guide/>
